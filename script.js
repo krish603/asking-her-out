@@ -15,14 +15,28 @@ s.addEventListener("click",function(){
   
   })
 
-  
+  let clickCount = 0;
 
-yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Yayyyy kal milte hainnnnnnnnn";
+function firstClick() {
+  clickCount++;
+
+  if (clickCount === 1) {
+    // Add your current function here
+    question.innerHTML = "Yayyyy kal milte hainnnnnnnnn";
   questions.innerHTML = "I loooooove u sooooo much ";
   gif.src =
     "UMon0fuimoAN9ueUNP.webp";
-});
+  } else if (clickCount === 2) {
+    window.open("https://www.instagram.com/krish._.pandya/", "_blank");
+  }
+}
+
+// yesBtn.addEventListener("click", () => {
+//   question.innerHTML = "Yayyyy kal milte hainnnnnnnnn";
+//   questions.innerHTML = "I loooooove u sooooo much ";
+//   gif.src =
+//     "UMon0fuimoAN9ueUNP.webp";
+// });
 
 noBtn.addEventListener("mouseover", () => {
   // const noBtnRect = noBtn.getBoundingClientRect();
